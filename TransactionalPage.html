@@ -1,0 +1,98 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Transaction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="TransactionalPage.css" rel="stylesheet" type="text/css"/>
+        <link href="aos.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="aos.js"></script>
+        <script type="text/javascript" src="jsfile.js"></script>
+    </head>
+    
+    <body id="bodylayout">
+             <header id="hdclr">
+             <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" >Home</a>
+                <a href="PackagePage.html" >Wedding</a>
+                <a href="PPakagePage.html">Product</a>
+                <a href="LPackagePage.html">Portrait</a>
+                <a href="AboutUs.html">About Us</a>
+            </div>
+            
+           <!-- Use any element to open the side navigate -->
+           <div onclick="openNav()">
+            <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </div>
+           </div>
+        </header>
+        <script>
+     AOS.init(
+       {
+          offset: 200,
+          duration: 1000,
+            });
+  </script>
+            <div class="bg2">
+                 <div class="caption">
+    <span class="border">Book Now</span>
+  </div>
+        </div>
+        
+            <div class="container7" data-aos="fade-up">
+                <h1>Booking Form</h1>
+                <p7>Please fill up this form to transfer your money</p7>
+                <hr></hr>
+                
+                <div class="container8">
+                    <label for="sname"> Full Name : </label>
+                <br></br>
+                <input type="text" id="textinput" name="sendername" placeholder="Enter Full Name"/>
+                <td></td>
+                <br></br>
+                <label for="rname">Age : </label>
+                <br></br>
+                <input type="text" id="textinput" name="receivername" placeholder="Enter Age"/>
+                <td></td>
+                <br></br>
+                <label for="rname">Contact Number : </label>
+                <br></br>
+                <input type="text" id="textinput" name="currencyconvertionrate" placeholder="Enter Contact Number"/>
+                <td></td>
+                <br></br>
+                <label for="rname">Email : </label>
+                <br></br>
+                <input type="text" id="textinput" name="currencyconvertionrate" placeholder="Enter Email Address"/>
+                <td></td>
+                <br></br>
+                <label for="morigin">Address : </label>
+                <br></br>
+                <input type="text" id="textinput" name="moneyorigin" placeholder="Enter Address"/>
+                <td></td>
+                <br></br>
+                <label for="mdestination">Date of Event : </label>
+                <br></br>
+                <input type="text" id="textinput" name="moneydestination" placeholder="Enter Date of Event"/>
+                <td></td>
+                <br></br>
+                 <label for="mdestination">Total Amount (RM) : </label>
+                <br></br>
+                <label type="text" id="textinput" name="moneydestination"/>
+                <td></td>
+                <br></br>
+                
+                
+                <button id="resultbtn" class="button" action="#{moneyTransferBean.callService()}">Confirm</button>
+                <a href="index.html"><button type="button" class="button2" >Cancel</button></a>
+                 
+                <td></td>
+                </div>
+            </div>
+        
+    <body>
+</html>
